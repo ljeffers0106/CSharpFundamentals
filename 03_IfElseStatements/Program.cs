@@ -18,7 +18,7 @@ namespace _03_IfElseStatements
             }
 
             int hourSpentStudying = 1;
-            if(hourSpentStudying < 16)
+            if (hourSpentStudying < 16)
             {
 
                 Console.WriteLine("Are you even trying?");
@@ -40,14 +40,14 @@ namespace _03_IfElseStatements
             int totalHours = int.Parse(input);
 
 
-            if(totalHours >= 8)
+            if (totalHours >= 8)
             {
                 Console.WriteLine("Congrats.  You are living the dream");
             }
             else
             {
                 Console.WriteLine("Welcome to the club");
-                if(totalHours < 3)
+                if (totalHours < 3)
                 {
                     Console.WriteLine("That's rough buddy");
                 }
@@ -58,13 +58,13 @@ namespace _03_IfElseStatements
             string ageInput = Console.ReadLine();
             int age = Convert.ToInt32(ageInput);
 
-            if(age > 17)
+            if (age > 17)
             {
                 Console.WriteLine("Congrats on being an adult");
-             }
+            }
             else
             {
-                if(age > 6)
+                if (age > 6)
                 {
                     Console.WriteLine("You are a kiddo");
                 }
@@ -78,7 +78,7 @@ namespace _03_IfElseStatements
                 }
             }
 
-            if(age > 65 || age < 18)
+            if (age > 65 || age < 18)
             {
 
                 Console.WriteLine("You have entered and age greater than 65 or less than 18.");
@@ -86,5 +86,7 @@ namespace _03_IfElseStatements
 
 
             }
+        }
     }
+
 }
