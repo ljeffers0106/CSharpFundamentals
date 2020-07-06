@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FD553D75-623E-4D47-BF24-C56D1B222BAD}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_08_StreamingContent_Inheritance</RootNamespace>
-    <AssemblyName>08_StreamingContent_Inheritance</AssemblyName>
+    <ProjectGuid>{2F8591C6-BBF8-4014-920D-5F02314CA497}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>_09_StreamingContent_Console</RootNamespace>
+    <AssemblyName>09_StreamingContent_Console</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,15 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Movie.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Show.cs" />
-    <Compile Include="StreamingRepository.cs" />
+    <Compile Include="UI\IConsole.cs" />
+    <Compile Include="UI\ProgramUI.cs" />
+    <Compile Include="UI\RealConsole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\07_RepositoryPattern_Repository\07_RepositoryPattern_Repository.csproj">
       <Project>{CE941560-4681-4F59-8CF5-D5B8AB320FFA}</Project>
       <Name>07_RepositoryPattern_Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\08_StreamingContent_Inheritance\08_StreamingContent_Inheritance.csproj">
+      <Project>{FD553D75-623E-4D47-BF24-C56D1B222BAD}</Project>
+      <Name>08_StreamingContent_Inheritance</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
