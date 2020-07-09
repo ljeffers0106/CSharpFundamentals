@@ -10,7 +10,7 @@ namespace _04_Loops
     {
         static void Main(string[] args)
         {
-            // While Loop
+            // While Loop  loop runs while condition is true
             int total = 1;
             while (total != 10)
             {
@@ -56,6 +56,11 @@ namespace _04_Loops
 
             //For Loop
             int studentCount = 5;
+            //1 starting point
+            //2 Conditions that while true, keep looping
+            //3 what happens after each loop
+            //4 Body of the loop, what happens each iteration
+
             // starting point, what will cause it to end, how it is incremented
             for (int i = 0; i < studentCount; i++)
             {
@@ -70,9 +75,16 @@ namespace _04_Loops
             }
 
             // foreach
+            //1 colletion that's being worked on
+            //2 Name of the current iteration being used
+            //3 current Type in the collection
+            //4 in keyword, used to seperate the individual and the collection
+            //5 Body of the loop
+
+            //foreach //3  //2     //4  //1
             foreach (string student in students)
             {
-                Console.WriteLine(student + " is in the class today");
+                Console.WriteLine(student + " is in the class today"); //5
             }
             // foreach will stop when it runs out of items in a collection
             string myName = "Amanda Joy Knight";

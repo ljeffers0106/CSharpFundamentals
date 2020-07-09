@@ -157,17 +157,17 @@ namespace Exercises
             }
 
             Console.ReadLine();
-            int AddTwoNumber;
-            public int AddTwoNumber(int numOne, int numTwo)
-            {
-                int sum = numOne + numTwo;
-                return sum;
-            }
-
+            
+            
         }
-                        
 
 
-        
+
+        public int AddTwoNumber(int numOne, int numTwo)
+        {
+            int sum = numOne + numTwo;
+            return sum;
+        }
+
     }
 }

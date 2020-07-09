@@ -14,7 +14,7 @@ namespace _09_StreamingContent_Console.UI
         // created for user interface
         // created streaming repository instance - window to access all functionality
 
-
+        // in order to use the interace we have to tell it what console to use
         private readonly IConsole _console;
         private readonly StreamingRepository _streamingRepo = new StreamingRepository();
 
