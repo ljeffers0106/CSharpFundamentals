@@ -107,8 +107,10 @@ namespace RobTheBank_Console
                 "");
             Player oneGuy = new Player();
             oneGuy.Name = Console.ReadLine();
-            string interpol = $"Well, well, well, {oneGuy.Name}, let's see if you can rob a bank and get away with it!";
+            string interpol = $"Well, well, well, {oneGuy.Name}, let's see if you can rob a bank and get away with it! \n" +
+                $"";
             Console.WriteLine(interpol);
+            Console.WriteLine("Press Any Key to Continue...");
             Console.ReadKey();
             
 
